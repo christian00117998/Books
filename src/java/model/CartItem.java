@@ -9,7 +9,7 @@ import java.io.*;
  */
 public class CartItem implements Serializable {
 
-    private Book book;
+    private Tbooks book;
     private int quantity = 0;
     private double costOfItem = 0.00;
 
@@ -18,7 +18,7 @@ public class CartItem implements Serializable {
      *
      * @param book the book to be added to the cart
      */
-    public CartItem(Book book) {
+    public CartItem(Tbooks book) {
         this.book = book;
     }
 
@@ -74,7 +74,7 @@ public class CartItem implements Serializable {
      *
      * @return the book in the cart item
      */
-    public Book getBook() {
+    public Tbooks getBook() {
         return book;
     }
 
